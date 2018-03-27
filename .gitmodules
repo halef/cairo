@@ -1,0 +1,3 @@
+[submodule "bash_helpers"]
+	path = bash_helpers
+	url = https://github.com/langep/bash_helpers

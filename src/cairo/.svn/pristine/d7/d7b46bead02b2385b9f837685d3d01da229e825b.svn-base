@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>cairo-client</name>
+  <comment>The module that provides client side mrcpv2 capabilities for speech recognition applications.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

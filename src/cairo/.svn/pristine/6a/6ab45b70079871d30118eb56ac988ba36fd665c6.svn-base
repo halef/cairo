@@ -1,0 +1,30 @@
+                       -----
+                     Overview
+                       -----
+                  Cairo Project Team
+                       -----
+
+Welcome to Project Cairo
+
+  Cairo provides an open source speech resource server written entirely in the Java programming language.  To achieve maximum compatibility with existing and future speech clients the Cairo server has been designed from the ground up to comply with the {{{http://www.ietf.org/internet-drafts/draft-ietf-speechsc-mrcpv2-10.txt}MRCPv2}} standard.
+
+~~{{{faq.html#WhatIsMRCPv2}MRCPv2}}
+
+  The purpose of Cairo is not to replace existing open source speech projects such as {{{http://freetts.sourceforge.net}FreeTTS}} and {{{http://cmusphinx.sourceforge.net/sphinx4/}Sphinx}}, but rather to build upon them and provide additional functionality such as clustering, load balancing and failover support in order to meet the requirements necessary for them to be used in enterprise scale deployments of speech/telephony applications.
+
+~~Cairo is still in the early stages.  The current release includes basic speech recognition and speech synthesis capabilities accessible via MRCPv2...
+
+Latest News
+
+*Cairo v0.1 Released - September 30, 2006
+
+  "Cairo sets out to provide an enterprise grade, MRCPv2 compliant speech server solution utilizing existing open source speech resources.
+
+  This release provides support for basic speech synthesis and speech recognition functionality using MRCPv2 for the control channel between the speech client and the speech resource and RTP for streaming audio to and from the media sink/source..."
+  ({{{http://www.freelists.org/archives/speechforge-news/09-2006/msg00000.html}more}})
+
+Get Cairo
+
+  The latest version of Cairo can be downloaded {{{http://sourceforge.net/project/showfiles.php?group_id=149085}here}}.
+
+  After {{{install.html}installation}} of Cairo please see the {{{intro.html}Getting Started Guide}} for instructions on starting up the Cairo server processes and running the MRCPv2 client demos.

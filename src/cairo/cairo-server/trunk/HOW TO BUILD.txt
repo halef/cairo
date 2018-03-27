@@ -1,0 +1,5 @@
+To Build:
+--------
+	#have to skip compiling test and running tests, because CMU changed their Sphinx4 classes significantly and no longer include TIDIGITS_8gau_13dCep_16k_40mel_130Hz_6800Hz and etc.  We should update unit tests at some point.
+
+	mvn install -DskipTests 

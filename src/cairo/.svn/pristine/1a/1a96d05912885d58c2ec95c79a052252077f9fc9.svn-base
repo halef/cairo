@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="cairo">
+
+  <bannerLeft>
+    <name>Cairo Banner</name>
+    <src>images/cairo-banner.jpg</src>
+    <href>index.html</href>
+  </bannerLeft>
+
+  <bannerRight>
+    <name>SourceForge.net Logo</name>
+    <src>http://sflogo.sourceforge.net/sflogo.php?group_id=149085&amp;type=5</src>
+    <href>http://sourceforge.net/</href>
+  </bannerRight>
+
+  <body>
+
+    <links>
+      <item name="Downloads" href="http://sourceforge.net/project/showfiles.php?group_id=149085"/>
+      <item name="Cairo Project Page" href="http://sourceforge.net/projects/cairo"/>
+      <item name="SpeechForge Home" href="http://www.speechforge.org"/>
+    </links>
+
+    <menu name="Cairo">
+      <item name="Overview" href="index.html"/>
+      <item name="Installation" href="install.html"/>
+      <item name="Getting Started" href="intro.html"/>
+      <item name="FAQ" href="faq.html"/>
+      <item name="API Documentation" href="docs/apidocs/index.html?overview-summary.html"/>
+    </menu>
+
+    <menu name="Project Documentation">
+      <item name="Project Info" href="project-info.html" collapse="false">
+        <item name="Dependencies" href="dependencies.html"/>
+        <item name="Mailing Lists" href="mail-lists.html"/>
+        <item name="Project License" href="license.html"/>
+        <item name="Project Team" href="team-list.html"/>
+        <item name="Source Repository" href="source-repository.html"/>
+      </item>
+    </menu>
+
+  </body>
+
+</project>

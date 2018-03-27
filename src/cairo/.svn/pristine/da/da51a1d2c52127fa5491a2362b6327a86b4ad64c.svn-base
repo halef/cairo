@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>cairo-rtp</name>
+  <comment>The module that provides RTP capabilities for speech recognition applications, clients and servers.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Sphinx-4 Configuration file
+-->
+
+<!-- ******************************************************** -->
+<!--  an4 configuration file                             -->
+<!-- ******************************************************** -->
+
+<config>
+
+    <!-- ******************************************************** -->
+    <!-- frequently tuned properties                              -->
+    <!-- ******************************************************** -->
+
+    <property name="logLevel" value="WARNING"/>
+    <property name="showCreations" value="false"/>
+
+
+    <!-- ******************************************************** -->
+    <!-- The live frontend 1 configuration                          -->
+    <!-- ******************************************************** -->
+    <component name="frontEnd1" type="edu.cmu.sphinx.frontend.FrontEnd">
+        <propertylist name="pipeline">
+        
+            <item>primaryInput1</item>
+            <item>speechClassifier1</item>
+            <item>speechMarker1</item>
+    <!--        <item>nonSpeechDataFilter1</item>-->
+	    <item>speechDataRecorder1</item>       
+ 
+        </propertylist>
+    </component>
+
+
+    <component name="primaryInput1"
+               type="org.speechforge.cairo.rtp.server.sphinx.RawAudioProcessor"/>
+
+    <component name="speechClassifier1"
+               type="edu.cmu.sphinx.frontend.endpoint.SpeechClassifier">
+        <property name="useSnrThreshold" value="false"/>
+        <property name="threshold" value="${speechClassifierThreshold}"/>
+        <property name="debug" value="false"/>
+    </component>
+
+    <component name="speechMarker1"
+               type="edu.cmu.sphinx.frontend.endpoint.SpeechMarker" >
+	    <property name="speechTrailer" value="500"/>
+        <property name="endSilence" value="500"/>
+	    <property name="startSpeech" value="50"/>
+	    <property name="speechLeader" value="500"/>
+    </component>
+
+    <component name="speechDataRecorder1"
+               type="org.speechforge.cairo.rtp.server.sphinx.SpeechDataRecorder"/>
+
+
+    <!-- ******************************************************* -->
+    <!--  monitors                                               -->
+    <!-- ******************************************************* -->
+
+
+    <!-- ******************************************************* -->
+    <!--  Miscellaneous components                               -->
+    <!-- ******************************************************* -->
+
+    <component name="logMath" type="edu.cmu.sphinx.util.LogMath">
+        <property name="logBase" value="1.0001"/>
+        <property name="useAddTable" value="true"/>
+    </component>
+
+</config>

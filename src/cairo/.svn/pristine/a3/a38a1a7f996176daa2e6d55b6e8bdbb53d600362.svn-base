@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/sphinx/sphinx4/1.0beta/sphinx4-1.0beta.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/speechforge/cairo-rtp/SNAPSHOT/cairo-rtp-SNAPSHOT.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/speechforge/cairo-sip/SNAPSHOT/cairo-sip-SNAPSHOT.jar"/>
+	<classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.3/commons-pool-1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/sdp/nist-sdp/1.0/nist-sdp-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mrcp4j/mrcp4j/0.2/mrcp4j-0.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/sip/jain-sip-api/1.2/jain-sip-api-1.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/1.0/commons-cli-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-configuration/commons-configuration/1.2/commons-configuration-1.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.3/commons-lang-2.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/freetts/freetts/1.2.1/freetts-1.2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.4/junit-4.4.jar"/>
+	<classpathentry kind="output" path="target/eclipse"/>
+</classpath>
