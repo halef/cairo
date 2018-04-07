@@ -50,9 +50,5 @@ if [[ "${BASH_SOURCE[0]}" = "$0" ]]; then
     move_libs
     move_bin
     move_config
-
-    info 'Run the following commands to set CAIRO_HOME'
-    info 'echo "export CAIRO_HOME=${install_path}" >> /etc/bash.bashrc'
-    info 'source /etc/bash.bashrc'
 fi
 
