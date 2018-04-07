@@ -24,8 +24,8 @@ environment() {
 set_defaults() {
     info "Setting default values."
     info "Getting local IP address if we are on AWS"
-    default_ip_address=$(curl --connect-timeout 5 http://169.254.169.254/latest/meta-data/local-ipv4 2> /dev/null)
-    if [[ $? -ne 0 ]]; then
+    default_ip_address=$(get_aws_external_ip)
+    if ! check_null_or_unset $default_ip_address; then
     	info "Looks like we are not on AWS. Setting default_ip_address to 127.0.0.1 instead."
     	default_ip_address=127.0.0.1
     fi
