@@ -17,7 +17,7 @@ source ${SCRIPT_DIR}/../bash_helpers/utils.sh
 
 environment() {
 	# Test for required environment variables.
-	check_null_or_unset ${CAIRO_HOME:-""} "JAVA_HOME"
+	check_null_or_unset ${CAIRO_HOME:-""} "CAIRO_HOME"
 	info "Environment check passed."
 }
 
