@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eo pipefail
 IFS=$'\n\t'
 
 #/ Usage: bash configure.sh
@@ -69,10 +69,10 @@ if [[ "${BASH_SOURCE[0]}" = "$0" ]]; then
 	mkdir -p ${CAIRO_HOME}/logs
 	touch ${CAIRO_HOME}/logs/cairo.log
 
-	chown cairo:halef ${record_dir}
-	chown cairo:halef ${grammar_dir}
-	chown cairo:halef ${prompt_dir}
-	chown cairo:halef ${CAIRO_HOME}/logs/cairo.log
+	chown cairo ${record_dir}
+	chown cairo ${grammar_dir}
+	chown cairo ${prompt_dir}
+	chown cairo ${CAIRO_HOME}/logs/cairo.log
 
 
 	cp config-template/log4j.xml config/log4j.xml
