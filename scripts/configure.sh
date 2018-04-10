@@ -24,7 +24,7 @@ environment() {
 set_defaults() {
     info "Setting default values."
     info "Getting local IP address if we are on AWS"
-    default_ip_address=$(get_aws_external_ip)
+    default_ip_address=$(get_aws_internal_ip)
     if ! check_null_or_unset $default_ip_address; then
     	info "Looks like we are not on AWS. Setting default_ip_address to 127.0.0.1 instead."
     	default_ip_address=127.0.0.1
