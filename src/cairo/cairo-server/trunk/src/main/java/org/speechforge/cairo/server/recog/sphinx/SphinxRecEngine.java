@@ -2,7 +2,6 @@ package org.speechforge.cairo.server.recog.sphinx;
 
 import edu.cmu.sphinx.recognizer.Recognizer;
 import edu.cmu.sphinx.util.props.ConfigurationManager;
-import java.awt.Toolkit;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import javax.media.protocol.PushBufferDataSource;
@@ -25,7 +24,6 @@ public abstract class SphinxRecEngine extends AbstractPoolableObject implements 
     protected final int _id;
     protected final int _origin; 
 
-    protected static final Toolkit _toolkit = _logger.isTraceEnabled()? Toolkit.getDefaultToolkit() : null;
     protected Recognizer _recognizer;
     protected RawAudioProcessor _rawAudioProcessor;
 
@@ -107,9 +105,6 @@ public abstract class SphinxRecEngine extends AbstractPoolableObject implements 
      * @see org.speechforge.cairo.server.recog.SpeechEventListener#speechStarted()
      */
     public void speechStarted() {
-        if (_toolkit != null) {
-            _toolkit.beep();
-        }
         RecogListener recogListener = null;
         synchronized (this) {
             recogListener = _recogListener;
@@ -125,9 +120,6 @@ public abstract class SphinxRecEngine extends AbstractPoolableObject implements 
      * @see org.speechforge.cairo.server.recog.SpeechEventListener#speechEnded()
      */
     public void speechEnded() {
-        if (_toolkit != null) {
-            _toolkit.beep();
-        }
     }
     
     /**
