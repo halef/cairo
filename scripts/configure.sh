@@ -75,8 +75,7 @@ if [[ "${BASH_SOURCE[0]}" = "$0" ]]; then
 	chown cairo ${CAIRO_HOME}/logs/cairo.log
 
 
-	cp config-template/log4j.xml config/log4j.xml
-	cp config-template/cairo-config.xml config/cairo-config.xml
+	cp config-template/* config/.
 	sed -i -e "s,%%IP%%,$ip_address,g" config/cairo-config.xml
 	sed -i -e "s,%%GRAMMAR_DIR%%,$grammar_dir,g" config/cairo-config.xml
 	sed -i -e "s,%%PROMPT_DIR%%,$prompt_dir,g" config/cairo-config.xml

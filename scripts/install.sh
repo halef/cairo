@@ -31,6 +31,8 @@ move_libs() {
 move_bin() {
     cp -r ${SCRIPT_DIR}/../bin-scripts/ bin/
     cp -r ${SCRIPT_DIR}/../bash_helpers bin/bash_helpers/
+    chmod +x bin/*.sh
+    chmod +x bin/cairo/*.sh
 }
 
 move_config() {

@@ -10,6 +10,10 @@
             <baseRecordingDir>%%RECORD_DIR%%</baseRecordingDir>
             <baseGrammarDir>%%GRAMMAR_DIR%%</baseGrammarDir>
             <ipAddress>%%IP%%</ipAddress>
+            <!-- You can overwrite the location like this but we already load
+                the sphinx-config.xml from this directory.
+            <sphinxConfigUrl>file:///your-config-dir/sphinx-config.xml</sphinxConfigUrl>
+            -->
         </resource>
 
         <resource type="transmitter">
