@@ -107,7 +107,7 @@ goto error
 set CLASSPATH=%CAIRO_JAR%
 for %%b in (%CAIRO_HOME%\lib\*.jar) do set CLASSPATH=!CLASSPATH!;%%b
 
-set CLASSPATH=%CAIRO_HOME%\config;!CLASSPATH!
+set CLASSPATH=%CAIRO_HOME%;!CLASSPATH!
 @REM echo CLASSPATH=%CLASSPATH%
 
 :run
