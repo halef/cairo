@@ -5,7 +5,7 @@ error() {
    exit 1
 }
 
-CPATH="$CPATH:$CAIRO_HOME"
+CPATH="$CPATH:$CAIRO_HOME:$CAIRO_HOME/config"
 
 for file in $( find $CAIRO_HOME/lib -name '*.jar' |sort)
 do
