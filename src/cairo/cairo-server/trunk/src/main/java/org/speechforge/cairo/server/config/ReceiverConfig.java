@@ -64,7 +64,7 @@ public class ReceiverConfig extends ResourceConfig {
                 // ignore
             }
             if (_sphinxConfigURL == null) {
-                _sphinxConfigURL = this.getClass().getResource("/config/sphinx-config.xml");
+                _sphinxConfigURL = this.getClass().getResource("/sphinx-config.xml");
                 if (_sphinxConfigURL == null) {
                     throw new ConfigurationException("Sphinx config URL not found in either cairo config file or cairo classpath!");
                 } else if (_logger.isDebugEnabled()) {
@@ -80,7 +80,7 @@ public class ReceiverConfig extends ResourceConfig {
                 // ignore
             }
             if (_sphinxRecorderConfigURL == null) {
-            	_sphinxRecorderConfigURL = this.getClass().getResource("/config/sphinx-recorder-config.xml");
+            	_sphinxRecorderConfigURL = this.getClass().getResource("/sphinx-recorder-config.xml");
                 if (_sphinxRecorderConfigURL == null) {
                     throw new ConfigurationException("Sphinx recorder config URL not found in either cairo config file or cairo classpath!");
                 } else if (_logger.isDebugEnabled()) {

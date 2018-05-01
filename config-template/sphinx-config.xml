@@ -168,7 +168,7 @@
     <component name="speechMarker1"
                type="edu.cmu.sphinx.frontend.endpoint.SpeechMarker" >
 	    <property name="speechTrailer" value="500"/>
-        <property name="endSilence" value="500"/>
+        <property name="endSilence" value="1500"/>
 	    <property name="startSpeech" value="200"/>
 	    <property name="speechLeader" value="500"/>
     </component>

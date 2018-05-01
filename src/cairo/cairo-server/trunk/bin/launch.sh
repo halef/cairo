@@ -118,7 +118,7 @@ done
 #if [ $OS = "Windows_NT" ]; then
     #CPATH="$CPATH;$CAIRO_HOME/config"
 #else 
-   CPATH="$CPATH:$CAIRO_HOME/config"
+   CPATH="$CAIRO_HOME/config:$CPATH"
 #fi
 
 #echo CPATH=$CPATH
