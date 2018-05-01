@@ -124,7 +124,7 @@ public class KaldiRecEngineWFST extends SphinxRecEngine {
 
         prop = new Properties();
         try {
-            InputStream in = getClass().getClassLoader().getResourceAsStream("kaldi.properties");
+            InputStream in = getClass().getClassLoader().getResourceAsStream("/config/kaldi.properties");
             prop.load(in);
             in.close();
         } catch (Exception e) {
