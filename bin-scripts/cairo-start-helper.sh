@@ -24,7 +24,7 @@ environment() {
 
 if [[ "${BASH_SOURCE[0]}" = "$0" ]]; then
 	environment
-	bash ${SCRIPT_DIR}/cairo/rserver.sh &
+	bash ${SCRIPT_DIR}/cairo/rserver.sh 2>&1 >> $CAIRO_HOME/logs/cairo &
 	info "Waiting until rserver.sh has started..."
 	sleep 2
 	for i in {1..30}; do
@@ -34,6 +34,6 @@ if [[ "${BASH_SOURCE[0]}" = "$0" ]]; then
 		[[ $i -lt 30 ]] || exit 1
 	done
 
-	bash ${SCRIPT_DIR}/cairo/receiver1.sh &
-	bash ${SCRIPT_DIR}/cairo/transmitter1.sh &
+	bash ${SCRIPT_DIR}/cairo/receiver1.sh 2>&1 >> $CAIRO_HOME/logs/cairo &
+	bash ${SCRIPT_DIR}/cairo/transmitter1.sh 2>&1 >> $CAIRO_HOME/logs/cairo &
 fi
